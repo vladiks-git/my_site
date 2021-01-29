@@ -1,0 +1,37 @@
+@import "../mixins.scss";
+
+.feedback-wrapper{
+  background: #EEEFF1;
+}
+.feedback{
+  @include center(1000px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+}
+.title{
+  font-size: 32px;
+  font-weight: bold;
+}
+.sub-title{
+  color: #727272;
+  text-align: center;
+}
+.infoUser {
+  margin-top: 65px;
+  display: flex;
+  width: 600px;
+  justify-content: space-between;
+}
+.message{
+  margin-top: 20px;
+}
+
+@media (max-width: 375px){
+  .infoUser{
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+  }
+}

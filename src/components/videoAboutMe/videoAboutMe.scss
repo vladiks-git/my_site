@@ -1,0 +1,24 @@
+@import "../mixins.scss";
+
+.video-block {
+  width: 100%;
+  background-color: #EEEFF1;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.video-content{
+  @include center(1000px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  & span{
+    color: #727272;;
+    text-align: center;
+    line-height: 24px;
+  }
+}
+.iframe-video{
+  margin-top: 57px;
+}

@@ -1,0 +1,17 @@
+.textArea{
+  border: none;
+  width: 600px;
+  height: 175px;
+  padding: 20px;
+  box-sizing: border-box;
+  &:focus{
+    outline: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .textArea{
+    width: 250px;
+    height: 150px;
+  }
+}

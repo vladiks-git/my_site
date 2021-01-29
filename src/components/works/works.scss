@@ -1,0 +1,17 @@
+@import "../mixins.scss";
+
+.works-wrap{
+  background: #34547A;
+}
+.works-content{
+  @include center(1000px);
+  justify-content: center;
+  display: flex;
+  padding: 80px;
+}
+
+@media (max-width: 375px) {
+  .works-content{
+    flex-direction: column;
+  }
+}

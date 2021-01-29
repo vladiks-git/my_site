@@ -1,0 +1,49 @@
+@import "../../mixins.scss";
+
+.wrapper{
+  @include center(1000px);
+  margin-top: 160px;
+  display: flex;
+}
+.info{
+  display: flex;
+  margin-left: 140px;
+  flex-direction: column;
+  & span{
+    font-size: 48px;
+    font-weight: 700;
+  }
+}
+.sub-title{
+  color: #727272;
+  margin-top: 60px;
+  line-height: 26px;
+}
+
+@media (max-width: 768px) {
+  .wrapper{
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper{
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .info{
+    margin-left: 0;
+    align-items: center;
+    & span {
+      text-align: center;
+      font-size: 24px;
+    }
+  }
+  .sub-title{
+    margin-top: 30px;
+  }
+  .imgComp{
+    width: 280px;
+    height: 250px;
+  }
+}

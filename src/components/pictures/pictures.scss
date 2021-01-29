@@ -1,0 +1,31 @@
+.images{
+  display: flex;
+  flex-wrap: wrap;
+}
+.overlay {
+  width: 25%;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.overlay:hover:after{
+  content:"";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 10000px rgba(52, 84, 122, 0.5);
+}
+
+@media (max-width: 768px) {
+  .overlay{
+    width: 50%;
+  }
+}
+
+@media (max-width: 375px) {
+  .overlay{
+    width: 100%;
+  }
+}

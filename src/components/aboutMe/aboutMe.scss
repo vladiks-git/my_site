@@ -1,0 +1,19 @@
+@import '../mixins.scss';
+
+.about{
+  @include center(1000px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 20px 100px 20px;
+}
+.aboutMe-text{
+  color: #727272;
+  line-height: 26px;
+}
+
+@media (max-width: 375px) {
+  .about{
+    padding: 50px 20px 50px 20px;
+  }
+}

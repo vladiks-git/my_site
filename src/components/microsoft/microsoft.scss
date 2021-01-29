@@ -1,0 +1,17 @@
+.mic{
+  display: flex;
+  justify-content: space-around;
+  padding: 72px 0;
+}
+
+@media (max-width: 768px) {
+  .mic{
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 375px) {
+  .mic{
+    flex-wrap: wrap;
+  }
+}
